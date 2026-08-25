@@ -30,11 +30,21 @@ yarn-error.*
 .DS_Store
 *.pem
 
-# local env files
-.env*.local
+# sekrety i zmienne srodowiskowe
+# UWAGA: samo ".env*.local" nie zakrywa zwyklego ".env"
+.env
+.env.*
+!.env.example
 
 # typescript
 *.tsbuildinfo
+
+# edytory
+.vscode/
+.idea/
+
+# logi
+*.log
 
 # generated native folders
 /ios
